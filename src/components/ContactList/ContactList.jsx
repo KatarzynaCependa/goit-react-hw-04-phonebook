@@ -30,5 +30,5 @@ export const ContactList = ({ onDeleteContact, contacts }) => {
 
 ContactList.propTypes = {
   contacts: PropTypes.array.isRequired,
-  onDeleteContact: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
 };

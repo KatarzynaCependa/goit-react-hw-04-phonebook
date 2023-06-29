@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from 'components/ContactForm/ContactForm.module.css';
 import { useState } from 'react';
 
-export const ContactForm = addContact => {
+export const ContactForm = addNewContact => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
@@ -19,8 +19,8 @@ export const ContactForm = addContact => {
   const handleSubmit = evt => {
     evt.preventDefault();
 
-    // pobieramy funkcję onSubmit z obiektu addContact
-    const { onSubmit } = addContact;
+    // pobieramy funkcję onSubmit z obiektu xD
+    const { onSubmit } = addNewContact;
     // wywołujemy funkcję przekazując jej aktualne wartości name i number
     onSubmit(name, number);
 
