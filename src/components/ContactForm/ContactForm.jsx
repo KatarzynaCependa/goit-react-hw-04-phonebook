@@ -18,8 +18,6 @@ export const ContactForm = addNewContact => {
 
   const handleSubmit = evt => {
     evt.preventDefault();
-
-    // pobieramy funkcję onSubmit z obiektu xD
     const { onSubmit } = addNewContact;
     // wywołujemy funkcję przekazując jej aktualne wartości name i number
     onSubmit(name, number);
