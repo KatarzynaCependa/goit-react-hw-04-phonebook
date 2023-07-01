@@ -7,7 +7,6 @@ export const ContactForm = addNewContact => {
   const [number, setNumber] = useState('');
 
   const handleInputChange = evt => {
-    // pobieram wartość name i value z obiektu evt.target, który reprezentuje element, na którym wywołano zdarzenie zmiany (onChange)
     const { name, value } = evt.target;
     if (name === 'name') {
       setName(value);

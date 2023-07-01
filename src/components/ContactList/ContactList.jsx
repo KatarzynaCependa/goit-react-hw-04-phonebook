@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import css from 'components/ContactList/ContactList.module.css';
 
-export const ContactList = ({ onDeleteContact, contacts }) => {
+export const ContactList = ({ onClick, contacts }) => {
   const deleteData = (evt, contactId) => {
-    onDeleteContact(contactId);
+    onClick(contactId);
   };
 
   return (

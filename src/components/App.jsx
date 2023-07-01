@@ -69,7 +69,7 @@ export const App = () => {
       <Filter onChange={handleFilterChange} />
       <ContactList
         contacts={showFilteredContacts()}
-        onCllick={handleDeleteContact}
+        onClick={handleDeleteContact}
       />
     </>
   );
